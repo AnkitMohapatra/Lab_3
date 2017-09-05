@@ -22,7 +22,7 @@ a = a % 20;
 R10 = a / 10;
 a = a % 10;
 R5 = a / 5;
-cout << "Rs. 2000 = " << R2000 << "\nRs. 500 = " << R500 << "\nRs. 200" << R200 << "\nRs. 100" << R100 << "\nRs. 50 = " << R50 << "\nRs. 20 = " << R20 << "\nRs. 10 = " << R10 << "\nRs. 5" << R5;
+cout << "Rs. 2000 = " << R2000 << "\nRs. 500 = " << R500 << "\nRs. 200 = " << R200 << "\nRs. 100 = " << R100 << "\nRs. 50 = " << R50 << "\nRs. 20 = " << R20 << "\nRs. 10 = " << R10 << "\nRs. 5" << R5;
 }
 else
    cout << "Denomations of this amount is are not available";
