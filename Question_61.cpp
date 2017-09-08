@@ -3,17 +3,17 @@
 using namespace std;
 
 int main() {
-long a,num,rem1,rem2,dec=0,oct=0,b1=1,b2=1;
+long a,num,rem,dec=0,b=1;
 cout << "Enter Binary number : ";
 cin >> a;
 num = a;
 while(num>0)
 {
-     rem1 = num % 10;
-     dec = dec + rem1*b1;
-     b1 = b1 * 2;
+     rem = num % 10;
+     dec = dec + rem*b;
+     b = b * 2;
      num = num / 10;
 }
-cout << dec;
+cout << "Decimal fom of " << a << " = " << dec;
 return 0;
 }
