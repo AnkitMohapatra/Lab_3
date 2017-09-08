@@ -21,6 +21,6 @@ while(dec>0)
      b2 = b2 * 10;
      dec = dec / 8;
 }
-cout << oct;
+cout << "Octal form of " << a << " = " << oct;
 return 0;
 }
