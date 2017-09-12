@@ -2,13 +2,14 @@
 using namespace std;
 
 int main() {
-int a,b,i;
+int a,b,num,i;
 cout << "Enter base & exponent respectively : ";
 cin >> a >> b;
+num = a;
 for( i=1 ; i<b ; i++ )
 {
-	a = a * a;
+	num = num * a;
 }
-cout << a;
+cout << num;
 return 0;
 }
