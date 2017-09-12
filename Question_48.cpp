@@ -2,13 +2,19 @@
 using namespace std;
 
 int main() {
-int n,i;
-cout << "Enter two numbers : ";
+int n,k;
+cout << "Enter a number : ";
 cin >> n;
-for( i=1 ; i<=n ; i++)
+for( k=1 ; k<=n ; k++)
 {
-   if(i%2!=0)
-     cout << i <<"\n";
+int j=0,i;
+for( i=1 ; i<=k ; i++)
+{
+	if(k%i==0)
+	  j++;
+}
+if(j==2)
+  cout << k << "\n";
 }
 return 0;
 }
