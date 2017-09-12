@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
 int a,j,i;
-cout << "Enter two numbers : ";
+cout << "Enter a number : ";
 cin >> a;
 for( i=1 ; i<=a ; i++)
 {
