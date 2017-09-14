@@ -1,36 +1,27 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-int main() {
-int a,num,remm,hex=0,dec,n=1;
-cout << "Enter Decimal number : ";
-cin >> dec;
-num = dec;
-while(dec>0)
+int main()
 {
-    remm = dec % 16;
-    hex = hex + remm*n;
-    n = n * 10;
-    dec = dec / 16;
-}
-if(hex>=10 & hex<=15)
-{
-switch(hex)
-{
-    case 10: cout << "A";
-             break;
-    case 11: cout << "B";
-             break;
-    case 12: cout << "C";
-             break;
-    case 13: cout << "D";
-             break;
-    case 14: cout << "E";
-             break;
-    case 15: cout << "F";
-}
-}
-else
-    cout << hex;
-return 0;
+ long int dec,rem,quo;
+ int i=1,j,temp;
+ char hexa[100];
+ cout << "\nEnter any decimal number: ";
+ cin >> dec;
+ quo = dec;
+ while(quo!=0)
+      {
+       temp = quo % 16;
+       if(temp < 10)
+         temp =temp + 48;
+       else
+         temp = temp + 55;
+       hexa[i++]= temp;
+       quo = quo / 16;
+      }
+ cout << "\nEquivalent hexadecimal number of " << dec << " is : ";
+ for(j=i-1 ;j>0 ; j--)
+ cout << hexa[j];
+ cout << endl;
+ return 0;
 }
