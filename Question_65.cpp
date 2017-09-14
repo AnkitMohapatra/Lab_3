@@ -1,43 +1,35 @@
-#include <iostream>
-#include<cmath>
+#include<iostream>
 using namespace std;
 
-int main() {
-int oct,bin=0,rem1,rem2,dec=0,i=0,j=1,remm,hex=0,n=1;
-cout << "Enter Octal number : ";
-cin >> oct;
-while(oct>0)
+int main()
 {
-     rem1 = oct % 10;
-     dec = dec + rem1*pow(8,i);
-     oct = oct / 10;
-     ++i;
-}
-while(dec>0)
-{
-    remm = dec % 16;
-    hex = hex + remm*n;
-    n = n * 10;
-    dec = dec / 16;
-}
-if(hex>=10 & hex<=15)
-{
-switch(hex)
-{
-    case 10: cout << "A";
-             break;
-    case 11: cout << "B";
-             break;
-    case 12: cout << "C";
-             break;
-    case 13: cout << "D";
-             break;
-    case 14: cout << "E";
-             break;
-    case 15: cout << "F";
-}
-}
-else
-    cout << hex;
+ long int oct, dec = 0, rem, num, base = 1;
+ cout << "\nEnter the octal number(combination of digits 0 to 7) : ";
+ cin >> num;
+ oct = num;
+ while (num > 0)
+       {
+        rem = num % 10;
+        dec = dec + rem * base;
+        base = base * 8;
+        num = num / 10;
+       }
+ long int quo;
+ int i=1,j,temp;
+ char hexa[100];
+ quo = dec;
+ while(quo!=0)
+      {
+       temp = quo % 16;
+       if(temp < 10)
+          temp = temp + 48;
+       else
+          temp = temp + 55;
+       hexa[i++] = temp;
+       quo = quo / 16;
+      }
+cout<<"\nEquivalent hexadecimal number of "<<oct<<" is : ";
+for(j = i -1 ;j> 0;j--)
+    cout<<hexa[j];
 return 0;
 }
