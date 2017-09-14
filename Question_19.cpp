@@ -21,10 +21,10 @@ if(perc>=90)
          if(perc>=60 & perc<=70)
            cout << "Grade D";
            else
-            if(perc>50 & perc<=60)
+            if(perc>40 & perc<=60)
               cout << "Grade E";
               else
-               if(perc>40 & perc<50)
+               if(perc<40)
                  cout << "Grade F";
 return 0;
 }
