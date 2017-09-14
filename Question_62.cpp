@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-long a,num,rem,remm,hex=0,dec=0,b=1,n=1;
+int a,num,rem,remm,hex=0,dec=0,b=1,n=1;
 cout << "Enter Binary number : ";
 cin >> a;
 num = a;
