@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-long oct,bin=0,num,rem1,rem2,dec=0,i=0,j=1;
+int oct,bin=0,num,rem1,rem2,dec=0,i=0,j=1;
 cout << "Enter Octal number : ";
 cin >> oct;
 num = oct;
