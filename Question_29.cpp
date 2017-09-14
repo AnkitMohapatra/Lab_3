@@ -12,6 +12,6 @@ while(i<=n)
     j = j + i;
 i += 1;
 }
-cout << j;
+cout << "Sum = " << j;
 return 0;
 }
