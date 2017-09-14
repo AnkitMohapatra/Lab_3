@@ -5,9 +5,20 @@ int main() {
 int a;
 cout << "Enter year : ";
 cin >> a;
-if(a%4 == 0)
-  cout << "It is a LEAP YEAR";
-  else
-      cout << "It is not a LEAP YEAR";
+if (a % 4 == 0)
+    {
+        if (a % 100 == 0)
+        {
+            if (a % 400 == 0)
+                cout << a << " is a leap year.";
+            else
+                cout << a << " is not a leap year.";
+        }
+        else
+            cout << a << " is a leap year.";
+    }
+    else
+        cout << a << " is not a leap year.";
+
 return 0;
 }
